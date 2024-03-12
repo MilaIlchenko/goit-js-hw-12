@@ -11,7 +11,7 @@ const searchForm = document.querySelector('.form');
 
 export async function searchImages(QUERY, perPage, page) {
   
-  const LINK = `${URL}?key=${KEY}&q=${QUERY, perPage}&image_type=photo&orientation=horizontal&savesearch=true&page=${page}&per_page=15`;
+  const LINK = `${URL}?key=${KEY}&q=${QUERY}&image_type=photo&orientation=horizontal&savesearch=true&page=${page}&per_page=${perPage}`;
 
 
   loader.style.display = 'block';

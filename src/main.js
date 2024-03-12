@@ -46,7 +46,7 @@ async function handleSearch(event) {
     return;
   }
 
-  searchImages(currentQuery, currentPage)
+  searchImages(currentQuery,15, currentPage)
   .then(arr => {
     totalHits = arr.totalHits;
     gallery.innerHTML = createMarkup(arr);
